@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos e Funções</title>
+
+</head>
+<!-- onload="alo()" evento é acionado no carregamento da página-->
+<body>
+    <h1>Eventos e Funções</h1>
+
+    <button onclick="alo()">Alo</button>
+    <br><br>
+    <button onclick="olaNome('Juliano')">Olá Nome</button>
+    <br><br>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" onchange="textoMudou()">
+        <button type="button" onclick="saudacao()">Saudação</button>
+    </form>
+    <br><br>
+    
+    <span onmouseover="mouseCima()" >Clique aqui</span>
+    <span onmouseout="mouseSaiu()" >Clique aqui</span>
+
+    <br><br>
+
+    <form >
+        <label for="user">Usuário:</label>
+        <input type="text" id="user" onfocus="emFoco()" onblur="semFoco()">
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
